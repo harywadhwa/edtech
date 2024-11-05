@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Pbase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="/assets/logo.png" alt="Pbase Logo"> <!-- Replace with your actual logo -->
+      <p>Scroll Through What Projects Your Friends Post</p>
+    </div>
+
+    <div class="right-section">
+      <h2>Your Pbase Account</h2>
+
+      <form id="loginForm">
+        <div class="input-icon">
+          <input type="email" id="email" placeholder="Email ID" required>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="input-icon">
+          <input type="password" id="password" placeholder="Password" required>
+          <i class="fas fa-eye" id="togglePassword"></i>
+        </div>
+        <button type="submit" class="login-button">Log In</button>
+      </form>
+
+      <a href="#" class="links forgot-password">Forgot Password?</a>
+      <a href="register.html" class="links">Don't Have An Account? Create Account</a>
+
+      <!-- Forgot Password Modal -->
+      <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h3>Reset Password</h3>
+          <form id="forgotPasswordForm">
+            <div class="input-icon">
+              <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <button type="submit" class="login-button">Send Reset Link</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

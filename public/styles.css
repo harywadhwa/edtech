@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  background-color: #0F2A44;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-section img {
+  width: 400px; /* Increased width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 30px;
+}
+
+.left-section h1 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 1.2rem;
+  color: #CCCCCC;
+}
+
+.right-section {
+  width: 40%;
+  background-color: #1E415E;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.right-section h2 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.right-section .social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.social-buttons button {
+  background-color: #FFFFFF;
+  border: none;
+  color: #444;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-buttons button img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.social-buttons button:hover {
+  opacity: 0.9;
+}
+
+.or-divider {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #AAAAAA;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00C6B7;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #00AFA7;
+}
+
+.links {
+  color: #00C6B7;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+/* Additional styling for eye icon (toggle password visibility) */
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  color: #AAAAAA;
+}
+
+/* Dashboard styles */
+.dashboard {
+  padding: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.project-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Post page styles */
+#postProjectForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#postProjectForm input, #postProjectForm textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#postProjectForm button {
+  padding: 10px;
+  background-color: #00C6B7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #1E415E;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; /* Could be more or less depending on screen size */
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Additional Modal Input Styles */
+.modal input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.modal .login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00C6B7;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal .login-button:hover {
+  background-color: #00AFA7;
+}

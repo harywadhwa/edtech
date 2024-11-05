@@ -1,0 +1,24 @@
+<!-- post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post New Project - Pbase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Post New Project</h2>
+    <form id="postProjectForm">
+      <input type="text" id="title" placeholder="Title of Project" maxlength="100" required>
+      <textarea id="description" placeholder="Description..." maxlength="500" required></textarea>
+      <input type="url" id="githubLink" placeholder="GitHub Repository Link" required>
+      <input type="file" id="thumbnail" accept="image/*" required>
+      <button type="submit">Post Project</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
